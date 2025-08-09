@@ -1,0 +1,20 @@
+[package]
+name = "mdict-rs"
+version = "0.1.0"
+authors = ["zhimoe"]
+edition = "2024"
+
+[lib]
+name = "mdict_rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = { version = "0.25", features = ["extension-module"] }
+nom = "8"
+adler32 = "1"
+flate2 = { version = "1", features = ["zlib"], default-features = false }
+minilzo-rs = "0.6"
+ripemd = "0.1"
+regex = "1.11"
+tracing = "0.1"
+encoding = "0.2"
