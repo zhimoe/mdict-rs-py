@@ -45,10 +45,7 @@ maturin build --release
 # Publish to PyPI (requires API token)
 maturin publish
 ```
-
-## Screenshot
-
-![screenshot](screenshot.png)
+[Pypi](https://pypi.org/project/mdict-rs/)
 
 ## References
 MDX的解析功能和mdx文件规范参考[mdict-analysis](https://bitbucket.org/xwang/mdict-analysis/src/master/)
