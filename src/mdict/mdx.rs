@@ -89,7 +89,7 @@ impl Mdx {
         self.records_offset.iter()
     }
 
-    pub fn items(&self) -> impl Iterator<Item = Record> {
+    pub fn items(&self) -> impl Iterator<Item = Record<'_>> {
         self.records_offset.iter().map(|rs| {
             let def = self.find_definition(&rs);
             Record {
