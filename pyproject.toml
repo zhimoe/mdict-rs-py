@@ -33,3 +33,13 @@ Repository = "https://github.com/zhimoe/mdict-rs-py"
 
 [tool.maturin]
 module-name = "mdict_rs"
+
+# 多平台支持配置
+[tool.maturin.scripts]
+
+# 交叉编译配置（可选）
+[tool.maturin.target]
+
+# 指定支持的Python版本
+[tool.maturin.python]
+requires-python = ">=3.8"
