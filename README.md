@@ -8,6 +8,8 @@ code.
 ```bash
 # Install maturin for building Python extensions
 python3 -m venv .venv && source .venv/bin/activate && pip install maturin
+# or use uv
+uv sync && source .venv/bin/activate && uv add maturin
 
 # Build and install the Python package
 maturin develop --release
