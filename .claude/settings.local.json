@@ -5,7 +5,11 @@
       "Bash(pip install:*)",
       "Bash(python3:*)",
       "Bash(source:*)",
-      "Bash(maturin develop:*)"
+      "Bash(maturin develop:*)",
+      "Bash(yamllint .github/workflows/publish.yml)",
+      "Bash(git add .github/workflows/ .github/README.md)",
+      "Bash(git add .github/workflows/ci.yml)",
+      "Bash(rustc --version)"
     ],
     "deny": []
   }
