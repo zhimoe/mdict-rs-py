@@ -11,22 +11,23 @@ authors = [
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.12"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Programming Language :: Rust",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Text Processing :: Linguistic",
 ]
 keywords = ["mdict", "dictionary", "parser", "rust", "pyo3"]
+dependencies = [
+    "maturin>=1.10.2",
+]
 
 [project.urls]
 Repository = "https://github.com/zhimoe/mdict-rs-py"
@@ -42,4 +43,4 @@ module-name = "mdict_rs"
 
 # 指定支持的Python版本
 [tool.maturin.python]
-requires-python = ">=3.8"
+requires-python = ">=3.12"
