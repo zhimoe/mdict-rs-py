@@ -8,7 +8,7 @@ import mdict_rs
 def main():
     # Example 1: Parse from a file path
     try:
-        print("Parsing MDX file...")
+        print("##1 Parsing MDX file...")
         mdx = mdict_rs.parse_mdx_file("resources/mdx/en/朗文当代4.mdx")
         
         print(f"Total entries: {mdx.get_entries_count()}")
@@ -29,13 +29,13 @@ def main():
 
     # Example 2: Parse from bytes
     try:
-        print("\nParsing from bytes...")
-        with open("resources/mdx/zh/汉语词典3.mdx", "rb") as f:
+        print("\n##2 Parsing from bytes...")
+        with open("resources/mdx/en/朗文当代4.mdx", "rb") as f:
             data = f.read()
-        
+
         mdx2 = mdict_rs.parse_mdx_bytes(data)
         print(f"Parsed {mdx2.get_entries_count()} entries from bytes")
-        
+
     except Exception as e:
         print(f"Error parsing from bytes: {e}")
 
